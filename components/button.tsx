@@ -1,27 +1,31 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react'
-import { ButtonHTMLAttributes } from 'react'
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode
-  variant?: 'primary' | 'contact'
-  showArrow?: boolean
+  children: React.ReactNode;
+  variant?: "primary" | "contact";
+  showArrow?: boolean;
 }
 
-export function Button({ 
-  children, 
-  variant = 'primary', 
+export function Button({
+  children,
+  variant = "primary",
   showArrow = true,
-  className = '', 
-  ...props 
+  className = "",
+  ...props
 }: ButtonProps) {
   return (
     <button
       className={`
         relative inline-flex items-center justify-center gap-2
-        bg-[#00FF9D] text-black font-bold text-lg px-8 py-3 
+        bg-[#00FF9D] text-black text-lg px-8 py-3 
         rounded-full border-[3px] border-black
-        ${variant === 'primary' ? 'shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1' : 'hover:bg-[#00FF9D]/90'}
+        ${
+          variant === "primary"
+            ? "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
+            : "shadow-[4px_4px_0px_0px_#ffffff]"
+        }
         transition-all duration-200
         ${className}
       `}
@@ -29,12 +33,13 @@ export function Button({
     >
       {children}
       {showArrow && (
-        <ArrowRight className="w-5 h-5 ml-1" />
+        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-[#4ADE80] transition-transform group-hover:translate-x-1">
+          <ArrowRight className="h-4 w-4" />
+        </span>
       )}
-      {variant === 'primary' && (
+      {variant === "primary" && (
         <div className="absolute inset-0 bg-black/10 opacity-0 hover:opacity-100 transition-opacity rounded-full" />
       )}
     </button>
-  )
+  );
 }
-
