@@ -52,17 +52,6 @@ export function CodePreview() {
 </ul>`}</code>
         </pre>
       </div>
-
-      {/* Scrolling text below */}
-      <div className="absolute -bottom-8 left-0 right-0 overflow-hidden whitespace-nowrap">
-        <div className="animate-scroll inline-flex gap-8">
-          {Array.from({ length: 7 }).map((_, i) => (
-            <span key={i} className={i % 2 === 0 ? "text-[#00FF9D]" : "text-black"}>
-              Convert code to PDF
-            </span>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

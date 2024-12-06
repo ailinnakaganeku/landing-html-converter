@@ -24,7 +24,7 @@ export function Button({
         ${
           variant === "primary"
             ? "shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
-            : "shadow-[4px_4px_0px_0px_#ffffff]"
+            : "shadow-[4px_4px_0px_0px_#ffffff] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
         }
         transition-all duration-200
         ${className}
@@ -36,9 +36,6 @@ export function Button({
         <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black text-[#4ADE80] transition-transform group-hover:translate-x-1">
           <ArrowRight className="h-4 w-4" />
         </span>
-      )}
-      {variant === "primary" && (
-        <div className="absolute inset-0 bg-black/10 opacity-0 hover:opacity-100 transition-opacity rounded-full" />
       )}
     </button>
   );
