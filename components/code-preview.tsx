@@ -2,7 +2,7 @@ import React from 'react';
 
 export function CodePreview() {
   return (
-    <div className="relative w-full max-w-4xl mx-auto h-[400px] mb-12">
+    <div className="relative w-full max-w-4xl mx-auto h-[400px] mb-12 overflow-hidden">
       {/* Dark code editor background */}
       <div className="h-[465px] w-[1233px] absolute !m-[0] right-[-18px] bottom-[-33.85px] rounded-mini bg-mediumspringgreen-100 overflow-hidden shrink-0 [transform:_rotate(-1.5deg)] [transform-origin:0_0]" />
 

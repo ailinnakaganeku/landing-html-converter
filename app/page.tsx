@@ -49,14 +49,12 @@ export default function LandingPage() {
       </section>
 
       {/* Scrolling Text */}
-      <div className="w-full overflow-hidden py-6 whitespace-nowrap">
-        <div className="animate-infinite-scroll inline-flex gap-8">
+      <div className="container mx-auto overflow-hidden py-6 whitespace-nowrap flex justify-between items-center gap-8">
           {Array.from({ length: 10 }).map((_, i) => (
             <span key={i} className={i % 2 === 0 ? "text-[#00FF9D]" : ""}>
               Convert code to PDF
             </span>
           ))}
-        </div>
       </div>
 
       {/* Code Preview Section */}
@@ -65,14 +63,13 @@ export default function LandingPage() {
       </section>
 
       {/* Scrolling Text */}
-      <div className="w-full overflow-hidden py-6 whitespace-nowrap">
-        <div className="animate-infinite-scroll inline-flex gap-8">
+      <div className="container mx-auto overflow-hidden py-6 whitespace-nowrap flex justify-between items-center gap-8">
+  
           {Array.from({ length: 10 }).map((_, i) => (
             <span key={i} className={i % 2 === 0 ? "text-[#00FF9D]" : ""}>
               Convert code to PDF
             </span>
           ))}
-        </div>
       </div>
 
       {/* How It Works Section */}
