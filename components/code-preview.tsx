@@ -15,15 +15,15 @@ export function CodePreview() {
             <span className="text-white">();</span>
             {'\n\n'}
             <span className="text-pink-500">if</span>
-            <span className="text-white"> (y + th + ay >= b &&</span>
+            <span className="text-white"> (y + th + ay {'>='} b &&</span>
             {'\n    '}
             <span className="text-white">y {'<='} b + wh + ay &&</span>
             {'\n    '}
-            <span className="text-white">x + tw + ax >= a &&</span>
+            <span className="text-white">x + tw + ax {'>='} a &&</span>
             {'\n    '}
             <span className="text-white">x {'<='} a + ww + ax) {'{'}</span>
             {'\n    '}
-            <span className="text-[#6A9955]">// trigger the custom event</span>
+            <span className="text-[#6A9955]">{`// trigger the custom event`}</span>
             {'\n    '}
             <span className="text-pink-500">if</span>
             <span className="text-white"> (!t.appeared) t.</span>
