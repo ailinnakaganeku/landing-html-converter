@@ -19,7 +19,7 @@ export default function LandingPage() {
             </h3>
           </div>
         </div>
-        <div className="flex flex-row items-start justify-start mq750:hidden">
+        <div className="md:flex flex-row items-start justify-start hidden">
           <div className="bg-[#00FF9D] text-black flex flex-row items-center justify-center py-2 px-[7px]">
             <h3 className="m-0 relative text-inherit leading-[120%] font-bold font-[inherit]">
               HTML
@@ -95,7 +95,7 @@ export default function LandingPage() {
                 className="mx-auto"
               />
             </div>
-            <p className="font-bold">
+            <p className="max-w-[70%] mx-auto">
               Paste your HTML code into the designated area
             </p>
           </div>
@@ -109,7 +109,7 @@ export default function LandingPage() {
                 className="mx-auto"
               />
             </div>
-            <p className="font-bold">
+            <p className="max-w-[70%] mx-auto">
               Click &apos;Generate PDF&apos; and watch as your HTML code
               transforms into a sleek PDF
             </p>
@@ -124,7 +124,7 @@ export default function LandingPage() {
                 className="mx-auto"
               />
             </div>
-            <p className="font-bold">
+            <p className="max-w-[70%] mx-auto">
               Download your PDF and share your content effortlessly
             </p>
           </div>

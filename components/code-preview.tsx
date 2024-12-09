@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export function CodePreview() {
   return (
-    <div className="relative w-full max-w-4xl mx-auto h-[400px] mb-12 overflow-hidden">
+    <div className="relative w-full max-w-4xl mx-auto h-[400px] mb-12 overflow-hidden md:overflow-visible">
       {/* Dark code editor background */}
-      <div className="h-[465px] w-[1233px] absolute !m-[0] right-[-18px] bottom-[-33.85px] rounded-mini bg-mediumspringgreen-100 overflow-hidden shrink-0 [transform:_rotate(-1.5deg)] [transform-origin:0_0]" />
 
       <div className="absolute inset-0 bg-black rounded-xl border-[4px] border-[#00FF9D] overflow-hidden">
         <pre className="p-8 text-sm font-mono">
@@ -13,24 +12,28 @@ export function CodePreview() {
             <span className="text-white"> ww = w.</span>
             <span className="text-[#61DAFB]">width</span>
             <span className="text-white">();</span>
-            {'\n\n'}
+            {"\n\n"}
             <span className="text-pink-500">if</span>
-            <span className="text-white"> (y + th + ay {'>='} b &&</span>
-            {'\n    '}
-            <span className="text-white">y {'<='} b + wh + ay &&</span>
-            {'\n    '}
-            <span className="text-white">x + tw + ax {'>='} a &&</span>
-            {'\n    '}
-            <span className="text-white">x {'<='} a + ww + ax) {'{'}</span>
-            {'\n    '}
+            <span className="text-white"> (y + th + ay {">="} b &&</span>
+            {"\n    "}
+            <span className="text-white">y {"<="} b + wh + ay &&</span>
+            {"\n    "}
+            <span className="text-white">x + tw + ax {">="} a &&</span>
+            {"\n    "}
+            <span className="text-white">
+              x {"<="} a + ww + ax) {"{"}
+            </span>
+            {"\n    "}
             <span className="text-[#6A9955]">{`// trigger the custom event`}</span>
-            {'\n    '}
+            {"\n    "}
             <span className="text-pink-500">if</span>
             <span className="text-white"> (!t.appeared) t.</span>
             <span className="text-[#61DAFB]">trigger</span>
-            <span className="text-white">(&apos;appear&apos;, settings.data);</span>
-            {'\n'}
-            <span className="text-white">{'}'}</span>
+            <span className="text-white">
+              (&apos;appear&apos;, settings.data);
+            </span>
+            {"\n"}
+            <span className="text-white">{"}"}</span>
           </code>
         </pre>
       </div>
@@ -55,4 +58,3 @@ export function CodePreview() {
     </div>
   );
 }
-

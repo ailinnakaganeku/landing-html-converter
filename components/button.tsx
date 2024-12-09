@@ -12,14 +12,15 @@ export function Button({
   children,
   variant = "primary",
   showArrow = true,
-  className = "",
   ...props
 }: ButtonProps) {
   return (
     <button
       className={`
-        relative inline-flex items-center justify-center gap-2
-        bg-[#00FF9D] text-black text-lg px-8 py-3 
+        relative inline-flex items-center justify-center gap-4
+        bg-[#00FF9D] text-black text-md ${
+          showArrow ? "pl-4 pr-2" : "px-8"
+        } py-3 
         rounded-full border-[3px] border-black
         ${
           variant === "primary"
@@ -27,7 +28,6 @@ export function Button({
             : "shadow-[4px_4px_0px_0px_#ffffff] hover:shadow-none hover:translate-x-1 hover:translate-y-1"
         }
         transition-all duration-200
-        ${className}
       `}
       {...props}
     >
