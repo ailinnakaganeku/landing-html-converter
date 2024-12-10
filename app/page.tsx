@@ -1,6 +1,7 @@
 import { Button } from "@/components/button";
 import { CodePreview } from "@/components/code-preview";
 import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
 import { HowItWorks } from "@/components/how-it-works";
 
 export default function LandingPage() {
@@ -10,19 +11,7 @@ export default function LandingPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-6xl font-bold mb-6 leading-tight">
-          <span className="text-[#00FF9D]">Transform</span> Your HTML Code
-          <br />
-          into Polished PDFs{" "}
-          <span className="bg-[#00FF9D] px-2">Instantly!</span>
-        </h1>
-        <p className="text-lg mb-10 max-w-2xl mx-auto">
-          Effortlessly convert your HTML code to professional-looking PDF
-          documents with our user-friendly online tool.
-        </p>
-        <Button>Get Started Now</Button>
-      </section>
+      <Hero />
 
       {/* Scrolling Text */}
       <div className="container mx-auto overflow-hidden py-6 whitespace-nowrap flex justify-between items-center gap-8">
