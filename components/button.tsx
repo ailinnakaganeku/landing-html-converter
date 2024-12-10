@@ -19,7 +19,7 @@ export function Button({
       className={`
         relative inline-flex items-center justify-center gap-4
         bg-[#00FF9D] text-black text-md ${
-          showArrow ? "pl-4 pr-2" : "px-8"
+          showArrow ? "pl-8 pr-4" : "px-8"
         } py-3 
         rounded-full border-[3px] border-black
         ${
